@@ -77,7 +77,8 @@ ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba2$ nano drosophila_melanoga
 ![NANO DROSOPHILAMELANOGASTER ENLACE BLANDO](https://user-images.githubusercontent.com/92113002/138105155-3695168e-f53f-441b-a461-03ad6919aea9.png)
 
 3. ¿Qué ocurre cuando se borra el destino y se intenta acceder al origen?
-Al borrar los dos destinos de ambos enlaces vemos que al abrir el archivo de origen se abre con normalidad.
+
+Al borrar los dos destinos de ambos enlaces vemos que al abrir el archivo de origen se abre completo.
 
 ```
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ ls
