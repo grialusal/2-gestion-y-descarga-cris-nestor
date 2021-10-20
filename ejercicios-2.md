@@ -39,9 +39,45 @@ total 0
 ```
 
 1. ¿Qué ocurre cuando se borra el origen y se intenta acceder al destino?
-2. ¿Qué ocurre cuando se borra el destino y se intenta acceder al origen?
-3. ¿Qué ocurre con la otra parte cuando se edita el destino o el origen del enlace?
-4. ¿Qué ocurre cuando copiamos un enlace?
+
+Al destruir el directorio de origen en nuestro caso "gtfs2", vemos que los enlaces siguen en sus directorios propios "prueba1" y "prueba"
+
+
+```
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ rm -r gtfs2
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ ls -li prueba1
+total 137488
+115736879 -rwxr-xr-x 1 ccalvo ccalvo 140785169 oct 20 15:21 Drosophila_melanogaster.BDGP6.28.102.gtf
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ ls -li prueba2
+total 0
+115736882 lrwxrwxrwx 1 ccalvo ccalvo 46 oct 20 15:32 Drosophila_melanogaster.BDGP6.28.102.gtf -> gtfs2/Drosophila_melanogaster.BDGP6.28.102.gtf
+```
+Pero al abrirlos con el editor de texto nano vemos diferencias en el caso del enlace duro (prueba1)
+El archivo se abre correctamente y se ve el contenido.
+
+```
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ cd prueba1
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba1$ ls
+Drosophila_melanogaster.BDGP6.28.102.gtf
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba1$ nano Drosophila_melanogaster.BDGP6.28.102.gtf
+```
+
+![NANO DROSOPHILAMELANOGASTER ENLACE DURO PRUEBA1](https://user-images.githubusercontent.com/92113002/138104995-313ad56b-2b68-4962-be03-fa9f8857b7e3.png)
+
+En cambio, el enlace blando (prueba2) al abrirlo e intentar editarlo aparece en blanco.
+
+```
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ cd prueba2
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba2$ ls
+Drosophila_melanogaster.BDGP6.28.102.gtf
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba2$ nano drosophila_melanogaster.BDGP6.28.102.gtf
+```
+
+![NANO DROSOPHILAMELANOGASTER ENLACE BLANDO](https://user-images.githubusercontent.com/92113002/138105155-3695168e-f53f-441b-a461-03ad6919aea9.png)
+
+3. ¿Qué ocurre cuando se borra el destino y se intenta acceder al origen?
+4. ¿Qué ocurre con la otra parte cuando se edita el destino o el origen del enlace?
+5. ¿Qué ocurre cuando copiamos un enlace?
 
 ### Respuesta ejercicio 1
 
