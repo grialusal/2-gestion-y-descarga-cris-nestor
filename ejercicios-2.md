@@ -41,6 +41,7 @@ total 0
 1. ¿Qué ocurre cuando se borra el origen y se intenta acceder al destino?
 
 Al destruir el directorio de origen en nuestro caso "gtfs2", vemos que los enlaces siguen en sus directorios propios "prueba1" y "prueba"
+Pero vemos que el enlace duro ha cambiado de rwxr-xr-x 2 a rwxr-xr-x 1.
 
 
 ```
