@@ -77,6 +77,22 @@ ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba2$ nano drosophila_melanoga
 ![NANO DROSOPHILAMELANOGASTER ENLACE BLANDO](https://user-images.githubusercontent.com/92113002/138105155-3695168e-f53f-441b-a461-03ad6919aea9.png)
 
 3. ¿Qué ocurre cuando se borra el destino y se intenta acceder al origen?
+Al borrar los dos destinos de ambos enlaces vemos que al abrir el archivo de origen se abre con normalidad.
+
+```
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ ls
+ejercicios-2.md  gtfs   LICENSE        prueba1  README.md
+genes            gtfs2  practica-2.md  prueba2
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ rm -r prueba1
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ rm -r prueba2
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ cd gtfs2
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/gtfs2$ ls
+Drosophila_melanogaster.BDGP6.28.102.gtf  Homo_sapiens.GRCh38.102.gtf.gz
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/gtfs2$ nano Drosophila_melanogaster.BDGP6.28.102.gtf
+```
+![nano original gtfs2](https://user-images.githubusercontent.com/92113002/138108677-57c805d4-f957-4846-acf8-029fec56f7c6.png)
+
+
 4. ¿Qué ocurre con la otra parte cuando se edita el destino o el origen del enlace?
 5. ¿Qué ocurre cuando copiamos un enlace?
 
