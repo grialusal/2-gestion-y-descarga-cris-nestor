@@ -25,8 +25,8 @@ ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ mkdir prueba2
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ ls
 ejercicios-2.md  gtfs   LICENSE        prueba1  README.md
 genes            gtfs2  practica-2.md  prueba2
-ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ ln gtfs/Drosophila_melanogaster.BDGP6.28.102.gtf prueba1
-ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ ln -s  gtfs/Drosophila_melanogaster.BDGP6.28.102.gtf prueba2
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ ln gtfs2/Drosophila_melanogaster.BDGP6.28.102.gtf prueba1
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ ln -s  gtfs2/Drosophila_melanogaster.BDGP6.28.102.gtf prueba2
 ```
 Se revisan que ambos enlaces están adecuadamente y tienen las diferencias entre ellas. En prueba1 se encuentra el enlace duro en prueba1 y el enlace blando en prueba2.
 ```
@@ -35,7 +35,7 @@ total 137488
 115736860 -rwxr-xr-x 2 ccalvo ccalvo 140785169 oct 19 19:07 Drosophila_melanogaster.BDGP6.28.102.gtf
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ ls -li prueba2
 total 0
-115736882 lrwxrwxrwx 1 ccalvo ccalvo 45 oct 20 15:22 Drosophila_melanogaster.BDGP6.28.102.gtf -> gtfs/Drosophila_melanogaster.BDGP6.28.102.gtf
+115736882 lrwxrwxrwx 1 ccalvo ccalvo 45 oct 20 15:22 Drosophila_melanogaster.BDGP6.28.102.gtf -> gtfs2/Drosophila_melanogaster.BDGP6.28.102.gtf
 ```
 
 1. ¿Qué ocurre cuando se borra el origen y se intenta acceder al destino?
