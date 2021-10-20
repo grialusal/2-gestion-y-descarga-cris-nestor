@@ -16,6 +16,10 @@ Crea una copia de la carpeta gtfs. Luego crea enlaces duros y blandos a los fich
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ cp -r gtfs gtfs2
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ ls
 ejercicios-2.md  genes  gtfs  gtfs2  LICENSE  practica-2.md  README.md
+```
+Tras hacer la copia, se crean dos carpetas para hacer ambos enlaces el blando y el duro.
+
+```
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ mkdir prueba1
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ mkdir prueba2
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ ls
@@ -23,6 +27,9 @@ ejercicios-2.md  gtfs   LICENSE        prueba1  README.md
 genes            gtfs2  practica-2.md  prueba2
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ ln gtfs/Drosophila_melanogaster.BDGP6.28.102.gtf prueba1
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ ln -s  gtfs/Drosophila_melanogaster.BDGP6.28.102.gtf prueba2
+```
+Se revisan que ambos enlaces están adecuadamente y tienen las diferencias entre ellas. En prueba1 se encuentra el enlace duro en prueba1 y el enlace blando en prueba2.
+```
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ ls -li prueba1
 total 137488
 115736860 -rwxr-xr-x 2 ccalvo ccalvo 140785169 oct 19 19:07 Drosophila_melanogaster.BDGP6.28.102.gtf
