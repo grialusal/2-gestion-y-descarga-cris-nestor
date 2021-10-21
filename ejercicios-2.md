@@ -95,7 +95,23 @@ ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/gtfs2$ nano Drosophila_melanogast
 
 
 4. ¿Qué ocurre con la otra parte cuando se edita el destino o el origen del enlace?
-5. ¿Qué ocurre cuando copiamos un enlace?
+```
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ cd gtfs2
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/gtfs2$ ls
+Drosophila_melanogaster.BDGP6.28.102.gtf  Homo_sapiens.GRCh38.102.gtf.gz
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/gtfs2$ nano Drosophila_melanogaster.BDGP6.28.102.gtf
+```
+
+```
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/gtfs2$ cd ..
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ cd prueba1
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba1$ nano Drosophila_melanogaster.BDGP6.28.102.gtf
+```
+
+
+
+
+6. ¿Qué ocurre cuando copiamos un enlace?
 
 ### Respuesta ejercicio 1
 
