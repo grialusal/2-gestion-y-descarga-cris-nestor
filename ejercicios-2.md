@@ -95,19 +95,23 @@ ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/gtfs2$ nano Drosophila_melanogast
 
 
 4. ¿Qué ocurre con la otra parte cuando se edita el destino o el origen del enlace?
+
+Si editamos el el archivo de origen dando tres espacios en las primeras líneas.
 ```
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ cd gtfs2
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/gtfs2$ ls
 Drosophila_melanogaster.BDGP6.28.102.gtf  Homo_sapiens.GRCh38.102.gtf.gz
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/gtfs2$ nano Drosophila_melanogaster.BDGP6.28.102.gtf
 ```
+![nano ejer4](https://user-images.githubusercontent.com/92113002/138236618-b4304b6a-733d-4f7c-be93-e0265f6cbfc1.png)
 
+Vemos que se mantiene en el enlace duro dicho cambio.
 ```
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/gtfs2$ cd ..
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ cd prueba1
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba1$ nano Drosophila_melanogaster.BDGP6.28.102.gtf
 ```
-
+![nanoprueba1ejer4](https://user-images.githubusercontent.com/92113002/138236631-06587d3b-46b2-4ea0-b193-02ed0b17e27c.png)
 
 
 
