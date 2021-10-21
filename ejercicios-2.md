@@ -172,7 +172,7 @@ Encontramos la opción -P que podría cuadrar para la copia de enlaces.
                                   atributos adicionales: context, links, xattr,
                                   all
 ```
-Realizamos la copia y vemos que cambia el inodo pero no cambian los permisos del enlace.
+Realizamos la copia y vemos que cambia el inodo pero no cambian los permisos del enlace. También se puede ver que el origen es el mismo.
 ```
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba2$ cp -P  Drosophila_melanogaster.BDGP6.28.102.gtf enlace2
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba2$ ls
