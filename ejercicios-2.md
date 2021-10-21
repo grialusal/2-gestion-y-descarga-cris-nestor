@@ -113,9 +113,24 @@ ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba1$ nano Drosophila_melanoga
 ```
 ![nanoprueba1ejer4](https://user-images.githubusercontent.com/92113002/138236631-06587d3b-46b2-4ea0-b193-02ed0b17e27c.png)
 
+Si revertimos el cambio, es decir, quitamos desde el enlace duro los tres espacios otra vez editando.
+```
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/gtfs2$ cd ..
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ cd prueba1
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba1$ nano Drosophila_melanogaster.BDGP6.28.102.gtf
+```
 
 
-6. ¿Qué ocurre cuando copiamos un enlace?
+Vemos que en el archivo de origen también se han cambiado y los cambios se han mantenido.
+
+```
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ cd gtfs2
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/gtfs2$ ls
+Drosophila_melanogaster.BDGP6.28.102.gtf  Homo_sapiens.GRCh38.102.gtf.gz
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/gtfs2$ nano Drosophila_melanogaster.BDGP6.28.102.gtf
+```
+
+5. ¿Qué ocurre cuando copiamos un enlace?
 
 ### Respuesta ejercicio 1
 
