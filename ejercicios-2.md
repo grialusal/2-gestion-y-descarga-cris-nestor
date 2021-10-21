@@ -119,6 +119,7 @@ ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/gtfs2$ cd ..
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ cd prueba1
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba1$ nano Drosophila_melanogaster.BDGP6.28.102.gtf
 ```
+![ejerc4nano1](https://user-images.githubusercontent.com/92113002/138237602-8b07ca76-a874-4ae8-9151-7bc29986e321.png)
 
 
 Vemos que en el archivo de origen también se han cambiado y los cambios se han mantenido.
@@ -129,6 +130,8 @@ ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/gtfs2$ ls
 Drosophila_melanogaster.BDGP6.28.102.gtf  Homo_sapiens.GRCh38.102.gtf.gz
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/gtfs2$ nano Drosophila_melanogaster.BDGP6.28.102.gtf
 ```
+![nano2origenejer4](https://user-images.githubusercontent.com/92113002/138237638-38f7e5a0-bf07-4fd1-8dea-881e46721c89.png)
+
 
 5. ¿Qué ocurre cuando copiamos un enlace?
 
