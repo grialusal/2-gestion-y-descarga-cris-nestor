@@ -147,6 +147,7 @@ total 274976
 115736882 -rwxr-xr-x 1 ccalvo ccalvo 140785169 oct 21 10:12 enlacecopia
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba1$ nano enlacecopia
 ```
+Al intentar copiar con el comando "cp" el enlace blando no nos permite.
 
 ```
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba2$ ls Drosophila_melanogaster.BDGP6.28.102.gtf
@@ -156,10 +157,12 @@ ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba2$ cp Drosophila_melanogast
 cp: no se puede efectuar `stat' sobre 'Drosophila_melanogaster.BDGP6.28.102.gtf': No existe el fichero o el directorio
 ```
 
+Consultamos las opciones del comando de copia "cp" con --help
 ```
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba2$ cp --help
 ```
 
+Encontramos la opción -P que podría cuadrar para la copia de enlaces.
 
 ```
   -P, --no-dereference         nunca sigue los enlaces simbólicos en ORIGEN
@@ -168,6 +171,8 @@ ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba2$ cp --help
                                   (por omisión: mode,ownership,timestamps)
                                   atributos adicionales: context, links, xattr,
                                   all
+```
+Realizamos la copia y vemos que cambia el inodo pero no cambian los permisos del enlace.
 ```
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba2$ cp -P  Drosophila_melanogaster.BDGP6.28.102.gtf enlace2
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba2$ ls
