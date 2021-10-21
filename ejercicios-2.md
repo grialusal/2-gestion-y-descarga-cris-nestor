@@ -135,7 +135,7 @@ ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/gtfs2$ nano Drosophila_melanogast
 
 5. ¿Qué ocurre cuando copiamos un enlace?
 
-Cuando copiamos el enlace duro vemos que se copia cambiando el número final y "rwxr-xr-x 2" cambia por un "rwxr-xr-x 1", pero este nuevo enlace se puede abrir y editar con normalidad como el original que hemos copiado.
+Cuando copiamos el enlace duro vemos que se copia cambiando el número final del inodo y "rwxr-xr-x 2" cambia por un "rwxr-xr-x 1", pero este nuevo enlace se puede abrir y editar con normalidad como el original que hemos copiado.
 
 ```
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba1$ cp Drosophila_melanogaster.BDGP6.28.102.gtf enlacecopia
@@ -146,6 +146,37 @@ total 274976
 115736883 -rwxr-xr-x 2 ccalvo ccalvo 140785169 oct 21 10:06 Drosophila_melanogaster.BDGP6.28.102.gtf
 115736882 -rwxr-xr-x 1 ccalvo ccalvo 140785169 oct 21 10:12 enlacecopia
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba1$ nano enlacecopia
+```
+
+```
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba2$ ls Drosophila_melanogaster.BDGP6.28.102.gtf
+Drosophila_melanogaster.BDGP6.28.102.gtf
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba2$ nano Drosophila_melanogaster.BDGP6.28.102.gtf
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba2$ cp Drosophila_melanogaster.BDGP6.28.102.gtf enlace2
+cp: no se puede efectuar `stat' sobre 'Drosophila_melanogaster.BDGP6.28.102.gtf': No existe el fichero o el directorio
+```
+
+```
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba2$ cp --help
+```
+
+
+```
+  -P, --no-dereference         nunca sigue los enlaces simbólicos en ORIGEN
+  -p                            igual que --preserve=mode,ownership,timestamps
+      --preserve[=LISTA_ATTR]   conserva si puede los atributos especificados,
+                                  (por omisión: mode,ownership,timestamps)
+                                  atributos adicionales: context, links, xattr,
+                                  all
+```
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba2$ cp -P  Drosophila_melanogaster.BDGP6.28.102.gtf enlace2
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba2$ ls
+Drosophila_melanogaster.BDGP6.28.102.gtf  enlace2
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba2$ nano enlace2
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba2$ ls -li
+total 0
+115736881 lrwxrwxrwx 1 ccalvo ccalvo 46 oct 21 09:50 Drosophila_melanogaster.BDGP6.28.102.gtf -> gtfs2/Drosophila_melanogaster.BDGP6.28.102.gtf
+115736884 lrwxrwxrwx 1 ccalvo ccalvo 46 oct 21 10:19 enlace2 -> gtfs2/Drosophila_melanogaster.BDGP6.28.102.gtf
 ```
 
 ### Respuesta ejercicio 1
