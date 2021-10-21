@@ -135,6 +135,19 @@ ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/gtfs2$ nano Drosophila_melanogast
 
 5. ¿Qué ocurre cuando copiamos un enlace?
 
+Cuando copiamos el enlace duro vemos que se copia cambiando el número final y "rwxr-xr-x 2" cambia por un "rwxr-xr-x 1", pero este nuevo enlace se puede abrir y editar con normalidad como el original que hemos copiado.
+
+```
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba1$ cp Drosophila_melanogaster.BDGP6.28.102.gtf enlacecopia
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba1$ ls
+Drosophila_melanogaster.BDGP6.28.102.gtf  enlacecopia
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba1$ ls -li
+total 274976
+115736883 -rwxr-xr-x 2 ccalvo ccalvo 140785169 oct 21 10:06 Drosophila_melanogaster.BDGP6.28.102.gtf
+115736882 -rwxr-xr-x 1 ccalvo ccalvo 140785169 oct 21 10:12 enlacecopia
+ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/prueba1$ nano enlacecopia
+```
+
 ### Respuesta ejercicio 1
 
 ## Ejercicio 2
