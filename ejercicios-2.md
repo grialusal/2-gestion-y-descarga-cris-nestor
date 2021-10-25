@@ -28,7 +28,7 @@ genes            gtfs2  practica-2.md  prueba2
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ ln gtfs2/Drosophila_melanogaster.BDGP6.28.102.gtf prueba1
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ ln -s  gtfs2/Drosophila_melanogaster.BDGP6.28.102.gtf prueba2
 ```
-Se revisan que ambos enlaces están adecuadamente y tienen las diferencias entre ellas. En prueba1 se encuentra el enlace duro en prueba1 y el enlace blando en prueba2.
+Se revisan que ambos enlaces están adecuadamente y tienen las diferencias entre ellas. En prueba1 se encuentra el enlace duro y el enlace blando en prueba2.
 ```
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ ls -li prueba1
 total 137488
