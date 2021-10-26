@@ -261,7 +261,11 @@ Tiempo total de reloj: 20s
 Descargados: 4 ficheros, 12M en 18s (692 KB/s)
 ```
 
+
+
 Tras la descarga entramos en las diferentes carpetas de los ficheros para buscar el archivo CHECKSUMS
+
+
 ```
 ccalvo@cpg3:~$ ls
 1-toma-de-contacto-cris-nestor    ftp.ensembl.org
@@ -283,7 +287,11 @@ ccalvo@cpg3:~/ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus$ ls
 Accipiter_nisus.Accipiter_nisus_ver1.0.102.abinitio.gtf.gz  CHECKSUMS
 Accipiter_nisus.Accipiter_nisus_ver1.0.102.gtf.gz           README
 ```
+
+
 Se inspecciona el fichero y se generan los checksums:
+
+
 ```
 ccalvo@cpg3:~/ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus$ shasum Accipiter_nisus.Accipiter_nisus_ver1.0.102.abinitio.gtf.gz
 94408e910dd56ef4811dc6b3ee67a6c270f2c544  Accipiter_nisus.Accipiter_nisus_ver1.0.102.abinitio.gtf.gz
