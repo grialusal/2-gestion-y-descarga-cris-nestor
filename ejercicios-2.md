@@ -202,66 +202,10 @@ Descarga, empleando la orden oportuna, todos los ficheros [de esta URL](ftp://ft
 
 ````
 ccalvo@cpg3:~$ wget -r ftp://ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus/
---2021-10-26 14:59:23--  ftp://ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus/
-           => «ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus/.listing»
-Resolviendo ftp.ensembl.org (ftp.ensembl.org)... 193.62.197.76
-Conectando con ftp.ensembl.org (ftp.ensembl.org)[193.62.197.76]:21... conectado.
-Identificándose como anonymous ... ¡Dentro!
-==> SYST ... hecho.   ==> PWD ... hecho.
-==> TYPE I ... hecho.  ==> CWD (1) /pub/release-102/gtf/accipiter_nisus ... hecho.
-==> PASV ... hecho.   ==> LIST ... hecho.
-
-ftp.ensembl.org/pub     [ <=>                ]     473  --.-KB/s    en 0,001s  
-
-2021-10-26 14:59:24 (418 KB/s) - «ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus/.listing» guardado [473]
-
-«ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus/.listing» eliminado.
---2021-10-26 14:59:24--  ftp://ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus/Accipiter_nisus.Accipiter_nisus_ver1.0.102.abinitio.gtf.gz
-           => «ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus/Accipiter_nisus.Accipiter_nisus_ver1.0.102.abinitio.gtf.gz»
-==> no se requiere CWD.
-==> PASV ... hecho.   ==> RETR Accipiter_nisus.Accipiter_nisus_ver1.0.102.abinitio.gtf.gz ... hecho.
-Longitud: 3468742 (3,3M)
-
-ftp.ensembl.org/pub 100%[===================>]   3,31M   885KB/s    en 3,8s    
-
-2021-10-26 14:59:28 (885 KB/s) - «ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus/Accipiter_nisus.Accipiter_nisus_ver1.0.102.abinitio.gtf.gz» guardado [3468742]
-
---2021-10-26 14:59:28--  ftp://ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus/Accipiter_nisus.Accipiter_nisus_ver1.0.102.gtf.gz
-           => «ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus/Accipiter_nisus.Accipiter_nisus_ver1.0.102.gtf.gz»
-==> no se requiere CWD.
-==> PASV ... hecho.   ==> RETR Accipiter_nisus.Accipiter_nisus_ver1.0.102.gtf.gz ... hecho.
-Longitud: 9593838 (9,1M)
-
-ftp.ensembl.org/pub 100%[===================>]   9,15M   660KB/s    en 15s    
-
-2021-10-26 14:59:43 (641 KB/s) - «ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus/Accipiter_nisus.Accipiter_nisus_ver1.0.102.gtf.gz» guardado [9593838]
-
---2021-10-26 14:59:43--  ftp://ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus/CHECKSUMS
-           => «ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus/CHECKSUMS»
-==> no se requiere CWD.
-==> PASV ... hecho.   ==> RETR CHECKSUMS ... hecho.
-Longitud: 152
-
-ftp.ensembl.org/pub 100%[===================>]     152  --.-KB/s    en 0s      
-
-2021-10-26 14:59:43 (305 KB/s) - «ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus/CHECKSUMS» guardado [152]
-
---2021-10-26 14:59:43--  ftp://ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus/README
-           => «ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus/README»
-==> no se requiere CWD.
-==> PASV ... hecho.   ==> RETR README ... hecho.
-Longitud: 9403 (9,2K)
-
-ftp.ensembl.org/pub 100%[===================>]   9,18K  --.-KB/s    en 0,01s  
-
-2021-10-26 14:59:44 (712 KB/s) - «ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus/README» guardado [9403]
-
 ACABADO --2021-10-26 14:59:44--
 Tiempo total de reloj: 20s
 Descargados: 4 ficheros, 12M en 18s (692 KB/s)
 ```
-
-
 
 Tras la descarga entramos en las diferentes carpetas de los ficheros para buscar el archivo CHECKSUMS
 
@@ -299,6 +243,7 @@ ccalvo@cpg3:~/ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus$ sum Accipiter
 ```
 
 Se genera el archivo .sha
+
 ```
 ccalvo@cpg3:~/ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus$ shasum Accipiter_nisus.Accipiter_nisus_ver1.0.102.abinitio.gtf.gz > Accipeter_checksum.sha
 ccalvo@cpg3:~/ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus$ cat Accipeter_checksum.sha
