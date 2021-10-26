@@ -11,7 +11,7 @@ Antes de comenzar, crea
 
 ## Ejercicio 1
 Crea una copia de la carpeta gtfs. Luego crea enlaces duros y blandos a los ficheros .gtf y responde:
-
+### Respuesta ejercicio 1
 ```
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ cp -r gtfs gtfs2
 ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor$ ls
@@ -184,7 +184,7 @@ total 0
 115736884 lrwxrwxrwx 1 ccalvo ccalvo 46 oct 21 10:19 enlace2 -> gtfs2/Drosophila_melanogaster.BDGP6.28.102.gtf
 ```
 
-### Respuesta ejercicio 1
+
 
 ## Ejercicio 2
 Usa la documentación de `find` para encontrar todos los notebook Jupyter con fecha de última modificación 30 de Noviembre de 2020 que haya en tu directorio HOME. Excluye todos aquellos que se encuentren dentro de directorios ocultos (aquellos que comienzan por un punto `.`). 
