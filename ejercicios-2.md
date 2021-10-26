@@ -200,7 +200,7 @@ Descarga, empleando la orden oportuna, todos los ficheros [de esta URL](ftp://ft
 
 ### Respuesta ejercicio 3
 
-````
+```
 ccalvo@cpg3:~$ wget -r ftp://ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus/
 ACABADO --2021-10-26 14:59:44--
 Tiempo total de reloj: 20s
