@@ -252,4 +252,9 @@ ccalvo@cpg3:~/ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus$ shasum -c Acc
 Accipiter_nisus.Accipiter_nisus_ver1.0.102.abinitio.gtf.gz: OK
 ccalvo@cpg3:~/ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus$ nano Accipeter_checksum.sha
 ccalvo@cpg3:~/ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus$
+ccalvo@cpg3:~/ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus$ shasum Accipiter_nisus.Accipiter_nisus_ver1.0.102.gtf.gz > Accipeter2_checksum.sha
+ccalvo@cpg3:~/ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus$ cat Accipeter2_checksum.sha
+8a4fb7b736de257798de4b7cc963124555babade  Accipiter_nisus.Accipiter_nisus_ver1.0.102.gtf.gz
+ccalvo@cpg3:~/ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus$ shasum -c Accipeter2_checksum.sha
+Accipiter_nisus.Accipiter_nisus_ver1.0.102.gtf.gz: OK
 ```
