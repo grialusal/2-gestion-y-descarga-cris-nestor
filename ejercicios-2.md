@@ -189,6 +189,19 @@ total 0
 ## Ejercicio 2
 Usa la documentación de `find` para encontrar todos los notebook Jupyter con fecha de última modificación 30 de Noviembre de 2020 que haya en tu directorio HOME. Excluye todos aquellos que se encuentren dentro de directorios ocultos (aquellos que comienzan por un punto `.`). 
 
+Buscando en el manual encontré varios comandos relacionados con el comando find para fechas. Creo que el modo correcto es crear un archivo para despúes usar un comando tipo 'cnewer refrence', pero no encontré aún uno para una fecha específica. Y con el mtime me aparecen fechas posteriores.
+'''
+nguerrero@cpg3:~$ find /home/alejandro -name *.ipynb -mtime -365
+/home/alejandro/P1-matriz-old.ipynb
+/home/alejandro/un_cuaderno.ipynb
+/home/alejandro/P6-enriquecimiento.ipynb
+/home/alejandro/P3-expresion.ipynb
+/home/alejandro/P4-expresionDiferencial.ipynb
+/home/alejandro/P1-matriz.ipynb
+/home/alejandro/P8-edgeR.ipynb
+/home/alejandro/P5-coexpresion.ipynb
+'''
+
 ### Respuesta ejercicio 2
 
 
