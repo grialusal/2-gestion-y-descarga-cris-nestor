@@ -153,7 +153,10 @@ Uso nano para colocar 'hola' al final de la primera línea del archivo
 ```
 
 Tras la edicion el enlace blando esta en blanco
-GNU nano 5.4   prueba-2/Drosophila_melanogaster.BDGP6.28.102.gtf             
+```
+GNU nano 5.4   prueba-2/Drosophila_melanogaster.BDGP6.28.102.gtf   
+
+```
 
 Para intentar comprender como funciona se borra el enlace blando y se vuelve a crearlo y el documento sigue en blanco, lo que me sorprende: 
 ```
