@@ -230,9 +230,9 @@ Usa la documentación de `find` para encontrar todos los notebook Jupyter con fe
 
 ### Respuesta ejercicio 2
 
-Buscando en el manual encontré varios comandos relacionados con el comando find para fechas. Creo que el modo correcto es crear un archivo para despúes usar un comando tipo 'cnewer refrence', pero no encontré aún uno para una fecha específica. Y con el mtime me aparecen fechas posteriores.
+Se usa el flag -newermt para indicar una fecha específica
 ```
-nguerrero@cpg3:~$ find /home/alejandro -name *.ipynb -mtime -365
+nguerrero@cpg3:~$ find /home/alejandro -name *.ipynb -newermt 11/17/2020
 /home/alejandro/P1-matriz-old.ipynb
 /home/alejandro/un_cuaderno.ipynb
 /home/alejandro/P6-enriquecimiento.ipynb
@@ -241,6 +241,20 @@ nguerrero@cpg3:~$ find /home/alejandro -name *.ipynb -mtime -365
 /home/alejandro/P1-matriz.ipynb
 /home/alejandro/P8-edgeR.ipynb
 /home/alejandro/P5-coexpresion.ipynb
+```
+Me devuelva esa lista, pero cuando examino la carpeta veo que sólo un archivo tiene la fecha de modificación 11/17/2020, por lo que creo que cometí un fallo:
+```
+nguerrero@cpg3:~$ ls -l /home/alejandro
+total 2424
+-rwxrwxrwx 1 root      root      116305 Jun 14 10:43 P1-matriz-old.ipynb
+-rwxrwxrwx 1 root      root       16282 Jun 14 10:43 P1-matriz.ipynb
+-rwxrwxrwx 1 root      root      468472 Jun 14 10:43 P3-expresion.ipynb
+-rwxrwxrwx 1 root      root      852404 Jun 14 10:43 P4-expresionDiferencial.ipynb
+-rwxrwxrwx 1 root      root      445767 Jun 14 10:43 P5-coexpresion.ipynb
+-rwxrwxrwx 1 root      root      141667 Jun 14 10:43 P6-enriquecimiento.ipynb
+-rwxrwxrwx 1 root      root      417108 Jun 14 10:43 P8-edgeR.ipynb
+drwxrwxrwx 3 alejandro alejandro   4096 Oct  9  2020 ps1
+-rwxrwxrwx 1 alejandro alejandro   5245 Nov 17  2020 un_cuaderno.ipynb
 ```
 ## Ejercicio 3
 Descarga, empleando la orden oportuna, todos los ficheros [de esta URL](ftp://ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus/). 
