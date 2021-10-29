@@ -132,7 +132,41 @@ ccalvo@cpg3:~/2-gestion-y-descarga-cris-nestor/gtfs2$ nano Drosophila_melanogast
 ```
 ![nano2origenejer4](https://user-images.githubusercontent.com/92113002/138237638-38f7e5a0-bf07-4fd1-8dea-881e46721c89.png)
 
+Con respecto al enlace blando:
+Repito todo borrando y creando los directorios desde el princpio y establaciendo el enlace blando:
+```
+nguerrero@cpg3:~$ cp -r gtfs gtfs-2
+nguerrero@cpg3:~$ mkdir prueba-2
+nguerrero@cpg3:~$ ls gtfs-2
+Drosophila_melanogaster.BDGP6.28.102.gtf  Homo_sapiens.GRCh38.102.gtf.gz
+nguerrero@cpg3:~$ ln -s gtfs-2/Drosophila_melanogaster.BDGP6.28.102.gtf prueba-2
+nguerrero@cpg3:~$ ls -li prueba-2
+total 0
+223740102 lrwxrwxrwx 1 nguerrero nguerrero 47 Oct 29 02:20 Drosophila_melanogaster.BDGP6.28.102.gtf -> gtfs-2/Drosophila_melanogaster.BDGP6.28.102.gtf
+```
+Uso nano para colocar 'hola' al final de la primera línea del archivo
+```
+  GNU nano 5.4    gtfs-2/Drosophila_melanogaster.BDGP6.28.102.gtf *            
+#!genome-build BDGP6.28 hola
+#!genome-version BDGP6.28
+#!genome-build-accession GCA_000001215.4
+```
 
+Tras la edicion el enlace blando esta en blanco
+GNU nano 5.4   prueba-2/Drosophila_melanogaster.BDGP6.28.102.gtf             
+
+Para intentar comprender como funciona se borra el enlace blando y se vuelve a crearlo y el documento sigue en blanco, lo que me sorprende: 
+```
+nguerrero@cpg3:~$ rm prueba-2/Drosophila_melanogaster.BDGP6.28.102.gtf
+nguerrero@cpg3:~$ ls -li prueba-2
+total 0
+nguerrero@cpg3:~$ ln -s gtfs-2/Drosophila_melanogaster.BDGP6.28.102.gtf prueba-2
+nguerrero@cpg3:~$ ls -li prueba-2
+total 0
+223740102 lrwxrwxrwx 1 nguerrero nguerrero 47 Oct 29 02:28 Drosophila_melanogaster.BDGP6.28.102.gtf -> gtfs-2/Drosophila_melanogaster.BDGP6.28.102.gtf
+nguerrero@cpg3:~$ nano prueba-2/Drosophila_melanogaster.BDGP6.28.102.gtf 
+GNU nano 5.4   prueba-2/Drosophila_melanogaster.BDGP6.28.102.gtf
+```
 5. ¿Qué ocurre cuando copiamos un enlace?
 
 Cuando copiamos el enlace duro vemos que se copia cambiando el número final del inodo y "rwxr-xr-x 2" cambia por un "rwxr-xr-x 1", pero este nuevo enlace se puede abrir y editar con normalidad como el original que hemos copiado.
