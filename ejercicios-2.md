@@ -328,3 +328,22 @@ Checksums:
 94408e910dd56ef4811dc6b3ee67a6c270f2c544  Accipiter_nisus.Accipiter_nisus_ver1.0.102.abinitio.gtf.gz
 8a4fb7b736de257798de4b7cc963124555babade  Accipiter_nisus.Accipiter_nisus_ver1.0.102.gtf.gz
 
+**Correcciones**
+
+En el ejercicio 1, apartado 4, cuando se edita el archivo de origen de un enlace blando y se intenta abrir el enlace se observa que la modificación se mantiene. En el apartado 5, al copiar un enlace blando lo que ocurre es que se copia el arhivo original.
+
+En el ejercicio 2 faltó incluir en el comando `-not -newermt '11/18/2020'` que indicaba solo buscar los archivos modificados el 17/11/2020.
+
+En el ejercicio 3 faltaron las órdenes `--no-directories  --no-parent` .
+
+**Calificación**
+
+Ej 1: 2.5
+
+Ej 2: 3
+
+Ej 3: 3.33
+
+Nota final: **8.83**
+
+Muy bien :)
